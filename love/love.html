@@ -115,6 +115,18 @@
             <div class="before"></div>
         </div>
     </div>
+     <!-- Audio Element -->
+     <audio id="background-music" loop>
+        <source src="../honcayeu.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Wait for user interaction before playing
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('background-music');
+            audio.play();
+        });
+    </script>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 <script>
@@ -171,7 +183,7 @@
     }
 
     const inputField = document.getElementById('inputField');
-    const textToType = "Trương Văn An";
+    const textToType = "Đào Thị Giang";
     const typingSpeed = 100; // milliseconds per character
 
     let charIndex = 0;
