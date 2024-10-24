@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Background Music</title>
+</head>
+<body>
+
+<!-- Audio Element -->
+<audio id="background-music" loop>
+    <source src="honcayeu.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    // Wait for user interaction before playing
+    document.body.addEventListener('click', function() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    });
+    // window.onload = (event) => {
+    //     var audio = document.getElementById('background-music');
+    //     audio.play();
+    //     console.log("page is fully loaded");
+    // };
+    // window.addEventListener('load', function() {
+    //     const audio = document.getElementById('backgroundMusic');
+    //     audio.play().catch(function(error) {
+    //         console.error("Phát nhạc thất bại:", error);
+    //     });
+    // });
+</script>
+
+<h1>Welcome to My Website</h1>
+<p>Click anywhere to start the background music.</p>
+
+</body>
+
+</html>
