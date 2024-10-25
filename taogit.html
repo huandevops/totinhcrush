@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hướng Dẫn Tạo Tài Khoản GitHub</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .col-md-4 {
+            position: fixed;
+            top: 60px;
+            /* Điều chỉnh giá trị này theo chiều cao của thanh header */
+            right: 0;
+            height: calc(100vh - 60px);
+            /* Chiều cao của phần menu sẽ bớt đi chiều cao của thanh header */
+            overflow-y: auto;
+            background-color: white;
+        }
+    </style>
 </head>
+
 <body>
     <header class="bg-primary text-white text-center py-3">
         <h1>Hướng Dẫn Tạo Tài Khoản GitHub</h1>
@@ -16,7 +30,8 @@
             <div class="col-md-8">
                 <article class="mb-4">
                     <h2>Bước 1: Truy cập trang web GitHub</h2>
-                    <p>Truy cập trang web chính thức của GitHub tại <a href="https://github.com" target="_blank">https://github.com</a>.</p>
+                    <p>Truy cập trang web chính thức của GitHub tại <a href="https://github.com"
+                            target="_blank">https://github.com</a>.</p>
                 </article>
                 <article class="mb-4">
                     <h2>Bước 2: Đăng ký tài khoản</h2>
@@ -66,7 +81,8 @@
                     <img src="image/emailcode.png" alt="Sign up form" class="img-fluid">
                 </article>
                 <article class="mb-4">
-                    <h2>Bước 9: Nhập code chính xác bạn sẽ được chuyển đến màn hình sau. Chỉ cần nhấn Skip Personalization</h2>
+                    <h2>Bước 9: Nhập code chính xác bạn sẽ được chuyển đến màn hình sau. Chỉ cần nhấn Skip
+                        Personalization</h2>
                     <p>Nhấn Skip Personalization</p>
                     <img src="image/SkipPersonal.png" alt="Sign up form" class="img-fluid">
                 </article>
@@ -76,13 +92,18 @@
                     <img src="image/success.png" alt="Sign up form" class="img-fluid">
                 </article>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="position: fixed; top: 0; right: 0;">
                 <h2>Menu</h2>
-                <p><a href="index.html"  target="_blank">Trang chủ</a></p>
-                <p><a href="huongdan.html"  target="_blank">Hướng dẫn</a></p>
-                <p><a href="totinhcrush.html"  target="_blank">Tỏ Tình</a></p>
-                <p><a href="taogit.html"  target="_blank">Tạo Git</a></p>
-                <p><a href="https://zalo.me/0942591118" class="btn btn-success btn-lg">Cần giúp đỡ hãy liên hệ Zalo của mình</a></p>
+                <p><a href="index.html" target="_blank">Trang chủ</a></p>
+                <p><a href="huongdan.html" target="_blank">Hướng dẫn</a></p>
+                <p><a href="totinhcrush.html" target="_blank">Tỏ Tình</a></p>
+                <p><a href="taogit.html" target="_blank">Tạo Git</a></p>
+                <p>
+                    <br>
+                    <a href="https://zalo.me/0942591118">
+                        <img src="image/zalo.png" alt="Zalo" style="width: 80px; height: 40px; margin-right: 0px;">
+                    </a>
+                </p>
             </div>
         </div>
     </main>
@@ -95,4 +116,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
